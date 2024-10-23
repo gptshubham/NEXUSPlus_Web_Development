@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <table border="1">
+        <!-- table title -->
+        <caption>My Multi Level Table</caption>
+        <!-- table headings -->
+        <thead>
+            <tr>
+                <!-- column 0 heading -->
+                <th rowspan="2" colspan="2">Column 0</th>
+                <!-- column 1 heading -->
+                <th rowspan="2">Column 1</th>
+                <!-- column 2 heading -->
+                <th colspan="2">Column 2</th>
+            </tr>
+            <!-- column 2 sub-headings -->
+            <tr>
+                <th>Column 2a</th>
+                <th>Column 2b</th>
+            </tr>
+        </thead>
+        <!-- table data -->
+        <tbody>
+            <!-- row 1a data -->
+            <tr>
+                <td rowspan="2"><b>Row 1</b></td>
+                <td><b>Row 1a</b></td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <!-- row 1b data -->
+            <tr>
+                <td><b>Row 1b</b></td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <!-- row 2 data -->
+            <tr>
+                <td colspan="2" align="center"><b>Row 2</b></td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
