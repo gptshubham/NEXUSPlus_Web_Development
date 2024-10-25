@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <form>
+            <label for="first">Name: </label>
+            <input type="text" id="first" required name="user_name" placeholder="Enter Your Name Here">
+            <br>
+            <br>
+            <label for="second">Age: </label>
+            <input type="number" min="0" max="100" id="second" required name="user_age" value="00">
+            <br>
+            <br>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
+
+<!-- name attribute should be unique. It's value is used as variable name in the server side and the value entered by user as input is assigned to such variable. It helps to differentiate. -->
