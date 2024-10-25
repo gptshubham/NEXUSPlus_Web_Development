@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form - Feedback</title>
+    </head>
+    <body>
+        <!-- Form Heading -->
+        <h1>Feedback Form</h1>
+        <!-- Asking user to Enter his name (mandatory) -->
+        <label for="uname">Your Name: </label>
+        <input type="text" id="uname" name="user_name" placeholder="Enter Your Name" required>
+        <br>
+        <br>
+        <!-- Asking user for his email id (optional) -->
+        <label for="emailid">Your Email:</label>
+        <input type="email" id="emailid" name="emailid" placeholder="example@gmail.com">
+        <br>
+        <br>
+        <!-- Rating Options (mandatory)-->
+        <label>Rate Us:</label>
+        <input type="radio" id="onestar" name="rating" value="1 Star" required>
+        <label for="onestar">1 Star</label>
+        <input type="radio" id="twostar" name="rating" value="2 Star">
+        <label for="twostar">2 Star</label>
+        <input type="radio" id="threestar" name="rating" value="3 Star">
+        <label for="threestar">3 Star</label>
+        <input type="radio" id="fourstar" name="rating" value="4 Star">
+        <label for="fourstar">4 Star</label>
+        <input type="radio" id="fivestar" name="rating" value="5 Star">
+        <label for="fivestar">5 Star</label>
+        <br>
+        <br>
+        <!-- Asking user for feedback comment (optional)-->
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment"></textarea>
+        <br>
+        <br>
+        <button>Submit Feedback</button>
+    </body>
+</html>
