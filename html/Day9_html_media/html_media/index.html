@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Audio File -->
+    <!-- first method -->
+    <audio src="./Assets/Jaadugar.mp3" controls></audio>
+    <br />
+    <!-- second method (preferred)-->
+    <audio controls>
+      <source src="./Assets/check.mp3" />
+      <!-- Alternate audio file (in case first one does not load) -->
+      <source src="./Assets/Jaadugar.mp3" />
+      <!-- Text msg in case both files don't load -->
+      Songs are not loading...!!!
+    </audio>
+    <br />
+
+    <!-- Video File -->
+    <!-- 1st Method -->
+    <video src="./Assets/hawa.MP4" height="400" controls autoplay muted></video>
+    <br />
+    <!-- 2nd Method (Preferred) -->
+    <video height="400" controls autoplay muted>
+      <source src="./Assets/hawa.MP4" type="video/mp4" />
+      Video not loading...!!!
+    </video>
+    <br />
+    <!-- YouTube Video -->
+
+    <!-- iframe -->
+    <iframe
+      src="https://www.youtube.com/embed/_AuKZ3WdcU4"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <iframe
+      src="https://www.youtube.com/embed/ZmVt6Hk5vjI"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <iframe
+      src="../../Day8_html_forms_advance/iit_jee_registration_form/index.html"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
