@@ -1,0 +1,22 @@
+/* Element Selector */
+h1 {
+  color: aquamarine;
+  background-color: black;
+}
+ul {
+  color: chartreuse;
+  background-color: brown;
+}
+
+/* Class Selector */
+.first {
+  background-color: aquamarine;
+}
+.second {
+  background-color: pink;
+}
+
+/* ID Selector */
+#first {
+  background-color: chartreuse;
+}

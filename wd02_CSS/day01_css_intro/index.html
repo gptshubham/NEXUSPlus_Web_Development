@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline & Internal CSS</title>
+    <!-- Internal CSS -->
+    <style>
+      /* Select by Element */
+      h1 {
+        color: blue;
+        background-color: green;
+      }
+      h2 {
+        color: aqua;
+        background-color: black;
+      }
+      ul {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Styling Initial Days -> font tag (Depricated)-->
+    <h1><font color="red" size="10">Hello Coder Army</font></h1>
+    <ul>
+      <li><font color="pink" size="10">Milk</font></li>
+      <li><font color="Brown" size="5">Whey</font></li>
+      <li><font color="Blue" size="10">Chicken</font></li>
+      <li><font color="Green" size="5">Egg</font></li>
+    </ul>
+    <!-- Problem with font tag: Code Readability -->
+
+    <!-- Styling CSS -->
+    <!-- Inline CSS -->
+    <h1 style="color: red; background-color: aqua">Hello Coder Army</h1>
+    <ul style="background-color: bisque">
+      <li style="color: blueviolet">Egg</li>
+      <li>Chicken</li>
+      <li>Whey</li>
+      <li>Milk</li>
+    </ul>
+    <!-- more properties compared to font tag, 
+     but the code readability is still terrible -->
+
+    <!-- Styling with Internal CSS using Selectors-->
+    <h1>Hello Coder Army</h1>
+    <h2>Diet Plan</h2>
+    <ul>
+      <li>Egg</li>
+      <li>Chicken</li>
+      <li>Whey</li>
+      <li>Milk</li>
+    </ul>
+    <h2>What's App</h2>
+  </body>
+</html>

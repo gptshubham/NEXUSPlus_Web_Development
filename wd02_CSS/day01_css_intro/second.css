@@ -1,0 +1,44 @@
+/*
+body {
+  background-color: aqua;
+}
+*/
+
+/* body tag is more powerful than universal selector * as body tag is the main container of the page, whereas * targets all the tags */
+
+/* Universal Selector (*) */
+/*
+* {
+  background-color: red;
+}
+*/
+
+/* Group Selector */
+h1,
+h2,
+p,
+#third {
+  background-color: yellowgreen;
+}
+
+/* Select by Attribute */
+h2[draggable="true"] {
+  background-color: aquamarine;
+}
+
+/* Descendant Selector */
+section p {
+  background-color: bisque;
+}
+
+/* Child Selector */
+section > h2 {
+  background-color: aqua;
+}
+
+/* 
+Note: 
+1. element, class and id selectors are mostly used selectors
+2. Descendant and Child Selectors can cause a mess in large code bases.
+3. A selector that has a direct conneciton to a specific element will always have higher priority compared to a selector that has more like a general connection with the same selector, e.g; we have h2 in the both Group Selector and Attribute Selector above . Attribute Selector is given more priority as it has a direct connection with h2 tag that has draggable attribute. Whereas, Group Selector is more general in term'm of connection when compared to Attribute Selector
+*/
