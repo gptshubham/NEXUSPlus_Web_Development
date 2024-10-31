@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+  font-family: "Verdana", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+/* header Styles */
+header {
+  background-color: #4caf50;
+  color: white;
+}
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.5em;
+  color: #ffd700;
+}
+/* article Styles */
+article {
+  background-color: white;
+}
+.css-article > h3 {
+  font-size: 2em;
+  color: #007bff;
+}
+.css-article p {
+  color: #555;
+}
+.js-article h3 {
+  font-size: 2em;
+  color: rgb(249, 60, 4);
+}
+.js-article p {
+  color: #333;
+}
+.responsive-article h3 {
+  font-size: 2em;
+  color: darkorchid;
+}
+.responsive-article p {
+  color: #333;
+}
+/* list Styles */
+h4 {
+  color: #ff69b4;
+  font-size: 1.5em;
+}
+/* table styles */
+table {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+th {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+td {
+  color: #333;
+  text-align: left;
+}
+/* footer styles */
+footer {
+  color: #333;
+  background-color: #ccc;
+  font-weight: bold;
+}
