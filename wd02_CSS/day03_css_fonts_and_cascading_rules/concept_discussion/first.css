@@ -1,0 +1,40 @@
+/* Cascading Rules */
+/* Order */
+h1 {
+  font-size: 30px;
+  background-color: brown !important;
+}
+h1 {
+  background-color: violet;
+  color: white;
+}
+/* Specificity */
+h2 {
+  background-color: chocolate !important;
+}
+#second_id {
+  background-color: lightseagreen;
+  color: white;
+}
+.second_class {
+  background-color: aquamarine;
+}
+h2[draggable="true"] {
+  background-color: yellowgreen;
+}
+body h2 {
+  background-color: dimgray;
+}
+body > h2 {
+  background-color: darkgoldenrod;
+}
+/* Inline vs Internal vs External CSS */
+ul {
+  background-color: darkgrey;
+  color: white;
+}
+
+/* Inheritance */
+body {
+  background-color: bisque;
+}
