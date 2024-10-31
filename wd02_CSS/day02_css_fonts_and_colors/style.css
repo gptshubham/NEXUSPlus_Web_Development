@@ -1,0 +1,62 @@
+/* Child Property */
+
+p > div {
+  color: blue;
+}
+ol > li > div {
+  color: blue;
+}
+/* p, h1-h6 does not allow any block element as child */
+/* ul and ol only allow li as child */
+/*  */
+div > p {
+  color: blue;
+}
+/* div, section and li allows all elements as child */
+
+/* CSS Color */
+/* Background Color */
+/* CSS Fonts */
+
+/* Change color by Color Name */
+h1 {
+  color: darkkhaki;
+  background-color: aqua;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 300%;
+}
+body {
+  /* background-color: blanchedalmond; */
+  background-image: url(./Assets/background-images/pexels-fwstudio-33348-129731.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  /* background-size property is used to adjust the background-image */
+}
+.first {
+  background-color: brown;
+}
+/* Change Color by rgb value*/
+h3 {
+  color: rgba(244, 8, 8, 0.5);
+  font-size: 3em;
+  /* 8bits + 8bits + 8bits = 24bits */
+  /* value range = [0,255] */
+  /* a (alpha) is optional. Transparency. value range [0,1] */
+}
+/* Change Color by Hexa-Decimal Value */
+/* # is used  */
+h2 {
+  color: #f0900dbb;
+  font-size: 2rem;
+  /* last two characters represent alpha and are optonal */
+}
+/* Change color by hsl value (in terms of %) */
+p {
+  color: hsla(296, 80%, 40%, 0.65);
+  /* hue: color type [value range] = 0,360*/
+  /* saturation: intensity [value in terms of %] */
+  /* lightness: [value in terms of %] */
+  /* a (alpha) is optional. Transparency. value range [0,1] */
+}
+/* Can hover over and select color and background-color mannually also */
