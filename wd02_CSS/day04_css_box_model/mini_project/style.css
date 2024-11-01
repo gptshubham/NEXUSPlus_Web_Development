@@ -1,0 +1,29 @@
+.card {
+  width: 30vw;
+  height: 11vw;
+  background-color: chocolate;
+  border: 5px yellowgreen solid;
+  padding: 10px;
+  margin: 40px 35vw 20px 35vw;
+  box-sizing: border-box;
+}
+h2 {
+  color: darkmagenta;
+  text-align: center;
+}
+p,
+h3 {
+  text-align: center;
+}
+body {
+  background-color: darkgoldenrod;
+  font-size: 1vw;
+}
+
+.card:hover h3 {
+  color: darkgreen;
+}
+.card:hover {
+  background-color: palevioletred;
+  transform: scale(1.2);
+}
