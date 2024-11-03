@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+}
+div {
+  height: 60vh;
+  width: 60vh;
+  background-color: rgb(141, 4, 4);
+  /* Centering a div using margin and margin-top properties */
+  margin:auto; /* Horizontally centers any element */
+  margin-top:20vh;
+  /* value of margin top = ((100 - Element height) / 2) expressed in terms of vh */
+  border-radius: 50%;
+}
