@@ -1,0 +1,20 @@
+/* * {
+  margin: 0;
+} */
+
+header {
+  background-color: cadetblue;
+  position: fixed;
+  /* top: 10px; */
+  /* width: 100%; */
+  /* Handling white-space without using `margin: 0;` inside universal selector and `width: 100%;` inside header selector, with this alternative `margin-top` option will also work inside the main selector */
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+main {
+  /* padding-top: 60px; */
+  /* why not margin-top ?--> explained in the lecture */
+  margin-top: 80px;
+}
