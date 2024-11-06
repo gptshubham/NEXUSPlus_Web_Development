@@ -1,0 +1,15 @@
+#img_rohit {
+  height: 300px;
+  /* width: 150px; */
+  float: left;
+  margin-right: 20px;
+  /* clear: left; */
+}
+
+#img_virat {
+  height: 300px;
+  float: right;
+  margin-left: 20px;
+  clear: both;
+  /* margin-top: 15px; */
+}
