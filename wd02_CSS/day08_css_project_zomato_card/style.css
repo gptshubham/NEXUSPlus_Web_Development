@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(245, 242, 242);
+  margin-left: 180px;
+  /* margin-right: 60px; */
+}
+
+.card:hover {
+  background-color: white;
+  border-color: white;
+}
+
+.card {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 15px rgb(245, 242, 242) solid;
+  border-radius: 5%;
+}
+
+.inline-block {
+  /* class inline-block includes all the inner most divs except image */
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.rating,
+.price,
+.distance {
+  position: absolute;
+  right: 5px;
+}
+
+.img {
+  height: 240px;
+  width: 320px;
+  border-radius: 5%;
+}
+
+.percentage {
+  height: 25px;
+  vertical-align: -25%;
+}
+
+.restaurant_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rating {
+  background-color: green;
+  border-radius: 20%;
+  color: white;
+  height: 20px;
+  padding: 5px;
+  padding-top: 0;
+  margin-top: 5px;
+}
+
+.new {
+  background-color: white;
+  color: green;
+  font-weight: bolder;
+}
+
+.restaurant,
+.food,
+.location {
+  position: relative;
+}
+
+.food {
+  font-size: 15px;
+  color: rgb(51, 51, 51);
+}
+
+.place {
+  font-size: 15px;
+  color: rgb(119, 119, 119);
+}
+
+.distance {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(104, 102, 102);
+}
+
+.discout {
+  font-size: 20px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgba(30, 144, 255, 0.6);
+  position: absolute;
+  bottom: 15px;
+}
+
+.image {
+  position: relative;
+}
