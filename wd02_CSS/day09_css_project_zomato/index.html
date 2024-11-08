@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head_top">
+        <!-- Zomato Logo -->
+        <div class="Box">
+          <img
+            src="./Assets/Images/header/zomato_logo.avif"
+            alt="zomato logo"
+            id="zomato_logo"
+          />
+        </div>
+        <!-- Location Selection -->
+        <div class="Box">
+          <i
+            class="fas fa-map-marker-alt"
+            style="color: #ff7e8b; font-size: 24px"
+          ></i>
+          <select name="search_location" id="search_location">
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+          </select>
+        </div>
+        <div class="Box" id="space"><p>|</p></div>
+        <div class="Box"><i class="fas fa-search search-icon"></i></div>
+        <!-- Dishes Search -->
+        <div class="Box">
+          <form id="search_dishes">
+            <input
+              type="text"
+              placeholder="search for restaurant, cuisine or a dish"
+              id="search_dishes"
+            />
+          </form>
+        </div>
+        <!-- Log in Button -->
+        <div class="Box">
+          <button id="log_in" class="header_buttons">Log in</button>
+        </div>
+        <!-- Sign up Button -->
+        <div class="Box">
+          <button id="sign_up" class="header_buttons">Sign up</button>
+        </div>
+      </div>
+      <!-- logo buttons -->
+      <div class="head_mid">
+        <!-- Dining Out Button -->
+        <button class="header_buttons">
+          <div class="Box logo_top">
+            <div class="Box img_divs" id="spoon">
+              <img
+                src="./Assets/Images/header/zomato_spoon_plate.avif"
+                alt="zomato dining out logo"
+                class="logo_image"
+              />
+            </div>
+            <div class="Box logo_text logo_text_1">Dining Out</div>
+          </div>
+        </button>
+        <!-- Delivery Button -->
+        <button class="header_buttons">
+          <div class="Box">
+            <div class="Box img_divs" id="scooter">
+              <img
+                src="./Assets/Images/header/zomato_delivery_scooter.webp"
+                alt="zomato Delivery scooter logo"
+                class="logo_image"
+              />
+            </div>
+            <div class="Box logo_text">Delivery</div>
+          </div>
+        </button>
+        <!-- Night Life Button -->
+        <button class="header_buttons">
+          <div class="Box">
+            <div class="Box img_divs" id="nightlife">
+              <img
+                src="./Assets/Images/header/zomato_night_life_logo.webp"
+                alt="zomato nightlife logo"
+                class="logo_image"
+              />
+            </div>
+            <div class="Box logo_text">Nightlife</div>
+          </div>
+        </button>
+      </div>
+      <div class="head_bottom">
+        <!-- Collection Heading -->
+        <div id="Collection"><p>Collections</p></div>
+        <!-- Collection Para -->
+        <div class="Box" id="Collection_para">
+          <p>
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            Bengaluru, based on trends
+          </p>
+        </div>
+        <div class="Box" id="Collection_para_2">
+          <p>All collections in Bengaluru ></p>
+        </div>
+        <!-- Right Scrolling Images -->
+        <div class="header_images">
+          <!-- Image 1 -->
+          <div class="Box">
+            <div class="images">
+              <img
+                src="./Assets/Images/header/image1.avif"
+                alt="restaurant image"
+              />
+            </div>
+            <div class="text1">Top Trending Spots</div>
+            <div class="text2">24 Places</div>
+          </div>
+          <!-- Image 2 -->
+          <div class="Box">
+            <div class="images">
+              <img
+                src="./Assets/Images/header/image2.avif"
+                alt="restaurant image"
+              />
+            </div>
+            <div class="text1">Best Rooftop Places</div>
+            <div class="text2">42 Places</div>
+          </div>
+          <!-- Image 3 -->
+          <div class="Box">
+            <div class="images">
+              <img
+                src="./Assets/Images/header/image3.avif"
+                alt="restaurant image"
+              />
+            </div>
+            <div class="text1">Newly Opened Places</div>
+            <div class="text2">31 Places</div>
+          </div>
+          <!-- Image 4 -->
+          <div class="Box">
+            <div class="images">
+              <img
+                src="./Assets/Images/header/imgage4.avif"
+                alt="restaurant image"
+              />
+            </div>
+            <div class="text1">It's a Data</div>
+            <div class="text2">24 Places</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="filter-buttons">
+        <button class="filter-btn" id="filter1">
+          <i class="fa fa-sliders-h"></i> Filters
+        </button>
+        <button class="filter-btn">Open Now</button>
+        <button class="filter-btn">Offers</button>
+        <button class="filter-btn">Rating: 4.5+</button>
+        <button class="filter-btn">Pet Friendly</button>
+        <button class="filter-btn">Outdoor Setting</button>
+        <button class="filter-btn">Serves Alcohol</button>
+      </div>
+      <div id="banner">
+        <img src="./Assets/Images/header/banner.avif" alt="" />
+      </div>
+      <div id="Bengaluru">Bengaluru Restaurants</div>
+      <div id="card_top">
+        <!-- Card 1 - Tiger Trail - Royal Orchid Hotel -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/royal_orchid.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 25% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Tiger Trail - Royal Orchid</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.3&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, Mughlai, Desserts</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2200 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Old Airport Road, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>5.6km</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 : High Ultra Lounge - Sheraton Grand Bangalore Hotel-->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/Sheraton_Grand.avif"
+              alt="Sheraton Grand Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 15% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Sheraton Grand</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.0&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, Continental, Des...</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;3600 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Sheraton Grand Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>6.2km</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 : The Scene - Craft Kitchen & Bar -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/The_Scene.avif"
+              alt="The Scene - Craft Kitchen & Bar"
+              class="img"
+            />
+            <!-- <p class="discout">Flat 25% OFF</p> -->
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>The Scene - Craft Kitchen & Bar</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.2&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, Continental, Asian</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1500 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>JP Nagar, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>7.4km</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 : No Limmits Lounge And Club -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/No_Limits.webp"
+              alt="No Limmits Lounge And Club"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 25% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>No Limmits Lounge And Club</p>
+            </div>
+            <div class="rating inline-block">
+              <p>3.8&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>Chinese, Continental, North Indian</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2500 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Brigade Road, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>1.8km</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 : Botany Brew and Kitchen -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/Botany_Brew_and Kitchen.avif"
+              alt="Botany Brew and Kitchen"
+              class="img"
+            />
+            <!-- <p class="discout">Flat 25% OFF</p> -->
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Botany Brew and Kitchen</p>
+            </div>
+            <div class="rating inline-block new">
+              <p>New&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, Chinese, Sushi...</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2700 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Lavelle Road, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>494m</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 :  -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/Toro Brew House & Kitchen.avif"
+              alt="Toro Brew House & Kitchen"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 10% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>TToro Brew House & Kitchen</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.2&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, Continental</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1000 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Sanjay Nagar, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>6.9km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 - Barbecue By Punjab Grill -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/image11.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 15% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Barbecue By Punjab Grill</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.2&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>BBQ, Mughlai, North Indian</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1600 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Mantri Square, Malleshwaram...</p>
+            </div>
+            <div class="distance inline-block">
+              <p>3.4km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 - Bramble -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Bramble.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 10% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Bramble</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.4&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>Continental, Asian, North Indian</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1800 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Jayanagar, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>6.3km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 - Gilly's Restobar -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Gilly's Restobar.avif"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 15% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Gilly's Restobar</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.2&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, European, Italian</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2000 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Bannerghatta Road, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>7.8km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 10 - Jook Taproom -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Jook Taproom.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 15% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Jook Taproom</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.4&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, South Indian...</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1600 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Indiranagar, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>5.1km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 11 - Tiger Trail - Royal Orchid Hotel -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Oia.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <!-- <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 25% OFF
+              </div> -->
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Oia</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.2&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>Continental, Asian, Seafood...</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2500 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Hennur, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>13km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 12 - Tiger Trail - Royal Orchid Hotel -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Long Boat Brewing Co..avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <!-- <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 25% OFF
+              </div> -->
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Long Boat Brewing Co.</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.3&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>Asian, Chinese, North Indian...</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2000 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Marathahalli, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>11.7km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 13 - Tiger Trail - Royal Orchid Hotel -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Kyba- Sushi Dim Sums & More.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 15% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Kyba- Sushi Dim Sums</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.7&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>Chinese, Thai, Sushi, Japanese</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1400 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Sahakara Nagar, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>9.8km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 14 - Tiger Trail - Royal Orchid Hotel -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/Maize & Malt.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 10% OFF
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Maize & Malt</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.2&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>Continental, Asian, South In...</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;1200 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>Whitefield, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>11.9km</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 15 - Tiger Trail - Royal Orchid Hotel -->
+        <div class="card">
+          <!-- Image -->
+          <div class="image">
+            <img
+              src="./Assets/Images/header/0c200864d0d99f38399f9ea9452e2a55_featured_v2.avif"
+              alt="Tiger Trail - Royal Orchid Hotel"
+              class="img"
+            />
+            <div>
+              <!-- <div class="discout">
+                &#160;&#160;
+                <img
+                  src="./Assets/Images/hollow_percentage-removebg-preview.png"
+                  alt="percentage within circle"
+                  class="percentage"
+                />&#160;&#160;Flat 25% OFF
+              </div> -->
+            </div>
+          </div>
+          <!-- Restaurant Name and Rating -->
+          <div class="restaurant">
+            <div class="restaurant_name inline-block">
+              <p>Indian Biere House</p>
+            </div>
+            <div class="rating inline-block">
+              <p>4.5&#9733;</p>
+            </div>
+          </div>
+          <!-- Food Type and Price -->
+          <div class="food">
+            <div class="food_name inline-block">
+              <p>North Indian, Mughlai, Desserts</p>
+            </div>
+            <div class="price inline-block">
+              <p>&#8377;2500 for two</p>
+            </div>
+          </div>
+          <!-- Location and Distance -->
+          <div class="location">
+            <div class="place inline-block">
+              <p>JP Nagar, Bangalore</p>
+            </div>
+            <div class="distance inline-block">
+              <p>7.3km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
