@@ -1,20 +1,33 @@
 * {
   margin: 0;
+}
+
+#Box {
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
-div {
-  display: inline-block;
+
+.box {
+  height: 100vh;
+  width: 33.33vw;
+}
+
+/* div {
+  display: inline-block; 
   height: 99.6vh;
-}
+} */
+
 #green {
   background-color: green;
-  width: 33.33vw;
 }
-#white {
+/* #white {
   width: 33.33vw;
-}
+} */
+
 #orange {
   background-color: orange;
-  width: 33.33vw;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

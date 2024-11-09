@@ -1,26 +1,34 @@
 * {
   margin: 0;
+}
+
+#Box {
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
-div {
+
+.box {
   display: inline-block;
   width: 100vw;
+  position: absolute;
 }
+
 #saffron {
-  background-color: #FF671F;
-  height: 33.1vh;
+  background-color: #ff671f;
+  height: 33.33vh;
 }
-#white {
-  height: 33.1vh;
-}
+
 #green {
-  background-color: #046A38;
-  height: 33.1vh;
+  background-color: #046a38;
+  height: 33.33vh;
+  bottom: 0;
 }
+
 img {
-  height: 15vw;
-  width: 15vw;
-  margin-left:42.5vw;
-  margin-top: 0.55vh;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 40%;
+  top: 33vh;
 }
