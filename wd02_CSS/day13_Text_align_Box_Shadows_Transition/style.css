@@ -1,0 +1,92 @@
+/* text-align */
+
+/* 
+h1 {
+  background-color: aliceblue;
+  color: orange;
+  text-align: justify;
+} 
+*/
+
+/*  
+.container {
+  text-align: center;
+  background-color: bisque;
+  color: red;
+}
+
+h1 {
+  background-color: pink;
+}
+
+p {
+  background-color: orange;
+}
+
+button {
+  background-color: fuchsia;
+  color: white;
+}
+*/
+
+/* 
+p {
+  background-color: olivedrab;
+  color: white;
+  text-align-last: justify;
+}
+*/
+
+/* direction */
+
+/*
+h1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 3rem;
+}
+
+h2 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 3rem;
+}
+p {
+  direction: rtl;
+  font-weight: bold;
+}
+*/
+
+/* verticle-align */
+
+/* span { 
+   vertical-align: sub; 
+   vertical-align: super; 
+  }  
+*/
+
+/* Text Decoration */
+
+h1 {
+  /* text-decoration-line:overline; */
+  /* text-decoration-line: line-through; */
+  font-size: 3rem;
+  text-decoration-line: overline underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  /* text-decoration-thickness: ; */
+
+  /* text-transform: lowercase; */
+  text-transform: uppercase;
+  text-shadow: 2px 2px;
+
+  /* text-spacing */
+}
+
+p {
+  text-indent: 5%;
+  letter-spacing: 1px;
+  line-height: 25px;
+  word-spacing: 2px;
+  /* white-space:; */
+}
