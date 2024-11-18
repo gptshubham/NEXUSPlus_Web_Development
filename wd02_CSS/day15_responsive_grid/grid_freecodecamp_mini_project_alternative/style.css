@@ -1,0 +1,59 @@
+/* freecodecamp grid practice mini project alternate method */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(20, 20, 66);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  grid-template-areas:
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box6"
+    "box1 box7 box8 box6";
+}
+
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+.box6 {
+  grid-area: box6;
+}
+.box7 {
+  grid-area: box7;
+}
+.box8 {
+  grid-area: box8;
+}
+
+.box3,
+.box5,
+.box7 {
+  background-color: rgb(201, 22, 22);
+}
+.box4,
+.box8 {
+  background-color: rgb(199, 137, 22);
+}
+.box1,
+.box2,
+.box6 {
+  background-color: rgb(97, 146, 23);
+}
