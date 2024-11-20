@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: inherit;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: orange;
+  /* border: 3px solid red; */
+
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: extended_spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+  animation-iteration-count: infinite;
+}
+
+@keyframes extended_spin {
+  from {
+    transform: rotate(0deg) translate(200px);
+  }
+  to {
+    transform: rotate(3600deg) translate(200px);
+  }
+}
