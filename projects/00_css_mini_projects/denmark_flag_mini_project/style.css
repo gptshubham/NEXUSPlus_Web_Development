@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  position: relative;
+}
+
+div {
+  /* display: inline-block; */
+  background-color: red;
+  height: 39vh;
+}
+
+#left-top {
+  width: 27vw;
+  margin-bottom: 22vh;
+  margin-right: 11.9vw;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+}
+
+#left-bottom {
+  width: 27vw;
+  margin-right: 11.9vw;
+  position: absolute;
+  /* left: 0; */
+  /* bottom: 0; */
+}
+
+#right-top {
+  width: 60vw;
+  margin-bottom: 22vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#right-bottom {
+  width: 60vw;
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+}

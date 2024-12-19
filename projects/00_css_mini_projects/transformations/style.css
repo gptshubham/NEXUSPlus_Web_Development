@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid brown;
+  margin: 0.5rem;
+  transition: all;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+}
+
+/* transform */
+#box1:hover {
+  /* translate() */
+  /* transform: translate(-200px); */
+  /* transform: translate(-200px, -300px); */
+  /* transform: translate(0, -200px); */
+
+  /* scale() */
+  /* transform: scale(0.5); */
+  /* transform: scale(0.5,0.75); */
+  /* transform: scale(-0.5, -0.75); */
+
+  /* rotate() */
+  /* transform: rotate(45deg); */
+  /* transform: rotate(360deg); */
+  /* transform: rotate(-360deg); */
+
+  /* skew() */
+  /* transform: skew(45deg); */
+
+  /* chaining multiple transform properties */
+  /* transform: translate(-200px, -150px) scale(0.1) rotate(360deg); */
+
+  /* transform-origin */
+  transform: rotate(360deg);
+  transform-origin: bottom left;
+}
+
+#box2:hover {
+  /* translate() */
+  /* transform: translate(200px); */
+  /* transform: translate(200px, -300px); */
+  /* transform: translate(0, -200px); */
+
+  /* scale() */
+  /* transform: scale(0.5); */
+  /* transform: scale(0.5,0.75); */
+  /* transform: scale(-0.5, -0.75); */
+
+  /* rotate() */
+  /* transform: rotate(45deg); */
+  /* transform: rotate(360deg); */
+  /* transform: rotate(-360deg); */
+
+  /* skew() */
+  /* transform: skew(-45deg); */
+  /* chaining multiple transform properties */
+  /* transform: translate(200px, -150px) scale(0.1) rotate(-360deg); */
+
+  /* transform-origin */
+  transform: rotate(360deg);
+  transform-origin: bottom right;
+}

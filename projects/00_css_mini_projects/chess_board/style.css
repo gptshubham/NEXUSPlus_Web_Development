@@ -1,0 +1,21 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(230, 221, 221);
+}
+
+.container {
+  width: 45vw;
+  height: 45vw;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}

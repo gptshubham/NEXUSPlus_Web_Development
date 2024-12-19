@@ -1,0 +1,11 @@
+header > h1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+header ol {
+  margin-top: 80px;
+  /* padding: 60px; */
+}

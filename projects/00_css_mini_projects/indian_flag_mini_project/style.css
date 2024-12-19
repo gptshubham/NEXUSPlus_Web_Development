@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+}
+
+#Box {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.box {
+  display: inline-block;
+  width: 100vw;
+  position: absolute;
+}
+
+#saffron {
+  background-color: #ff671f;
+  height: 33.33vh;
+}
+
+#green {
+  background-color: #046a38;
+  height: 33.33vh;
+  bottom: 0;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 40%;
+  top: 33vh;
+}

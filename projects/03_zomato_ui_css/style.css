@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+}
+
+main {
+  background-color: rgb(245, 242, 242);
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.filter-buttons {
+  margin-bottom: 20px;
+}
+.filter-btn {
+  font-size: 15px;
+  height: 30px;
+  margin: 25px 10px;
+  color: gray;
+  background-color: rgb(245, 242, 242);
+  border-color: gray;
+  border-radius: 10%;
+  border-width: 1px;
+}
+.filter-btn:hover {
+  background-color: rgb(230, 223, 223);
+}
+.filter-btn:active {
+  background-color: red;
+  color: white;
+}
+#filter1 {
+  margin-left: 20px;
+}
+.card:hover {
+  background-color: white;
+  border-color: white;
+}
+
+.card {
+  display: inline-block;
+  margin-left: 21px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 15px rgb(245, 242, 242) solid;
+  border-radius: 5%;
+}
+
+.inline-block {
+  /* class inline-block includes all the inner most divs except image */
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rating,
+.price,
+.distance {
+  position: absolute;
+  right: 5px;
+}
+
+.img {
+  height: 240px;
+  width: 320px;
+  border-radius: 5%;
+}
+
+.percentage {
+  height: 25px;
+  vertical-align: -25%;
+}
+
+.restaurant_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rating {
+  background-color: green;
+  border-radius: 20%;
+  color: white;
+  height: 20px;
+  padding: 5px;
+  padding-top: 0;
+  margin-top: 5px;
+}
+
+.new {
+  background-color: white;
+  color: green;
+  font-weight: bolder;
+}
+
+.restaurant,
+.food,
+.location {
+  position: relative;
+}
+
+.food {
+  font-size: 15px;
+  color: rgb(51, 51, 51);
+}
+
+.place {
+  font-size: 15px;
+  color: rgb(119, 119, 119);
+}
+
+.distance {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(104, 102, 102);
+}
+
+.discout {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(30, 144, 255, 0.6);
+  position: absolute;
+  bottom: 15px;
+}
+
+.image {
+  position: relative;
+}
+
+/* Header Styles */
+.Box {
+  display: inline-block;
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+.head_top {
+  margin-bottom: 40px;
+}
+.head_top,
+.head_mid {
+  padding-top: 10px;
+  padding-left: 200px;
+  background-color: white;
+}
+
+#zomato_logo {
+  width: 125px;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+#search_location {
+  width: 200px;
+  position: relative;
+  bottom: 5px;
+}
+
+#search_dishes {
+  width: 300px;
+  position: relative;
+  bottom: 2px;
+}
+.search-icon {
+  margin-right: 8px;
+  margin-left: 10px;
+  color: #aaa;
+  position: relative;
+  bottom: 5px;
+}
+#search_location,
+#search_dishes {
+  font-size: 15px;
+  border: none;
+  color: rgb(136, 127, 127);
+}
+
+#log_in,
+#sign_up {
+  font-size: 20px;
+  color: rgb(136, 127, 127);
+}
+
+#log_in {
+  margin-left: 210px;
+}
+
+#space {
+  font-size: 20px;
+  position: relative;
+  bottom: 5px;
+}
+
+.logo_image {
+  height: 30px;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+
+.img_divs {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+}
+
+#spoon {
+  background-color: rgb(232, 247, 247);
+}
+
+#scooter,
+#nightlife {
+  background-color: rgb(245, 242, 242);
+}
+
+.logo_text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(136, 127, 127);
+  vertical-align: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logo_top {
+  /* margin-top: 40px; */
+  margin-bottom: 10px;
+}
+
+.header_buttons {
+  background-color: white;
+  border: none;
+}
+.logo_text_1 {
+  color: red;
+}
+
+.head_bottom {
+  background-color: rgb(231, 225, 225);
+  font-family: Helvetica, sans-serif;
+  padding-top: 20px;
+  padding-left: 220px;
+  z-index: -1;
+}
+
+#Collection {
+  font-size: 30px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+#Collection_para {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+#Collection_para_2 {
+  color: red;
+  position: absolute;
+  right: 210px;
+  margin-top: 5px;
+}
+.head_mid {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.images > img {
+  height: 300px;
+  width: 260px;
+  border-radius: 2%;
+  margin-bottom: 40px;
+  margin-right: 15px;
+}
+
+.images {
+  position: relative;
+}
+.text1,
+.text2 {
+  color: white;
+}
+.text1 {
+  position: absolute;
+  bottom: 70px;
+  left: 30px;
+  font-size: 20px;
+}
+
+.text2 {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+
+#banner > img {
+  height: 250px;
+  margin-left: 22px;
+}
+
+#Bengaluru {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 22px;
+  margin-top: 15px;
+  color: rgb(27, 27, 27);
+  margin-bottom: 20px;
+}

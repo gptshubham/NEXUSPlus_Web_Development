@@ -1,0 +1,39 @@
+.container {
+  height: 800px;
+  width: 800px;
+  background-color: rgb(13, 224, 231);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: orange;
+  margin: 10px;
+  border-radius: 50%;
+  /* Box Shadow */
+  /* box-shadow: 5px 10px; */
+  /* box-shadow: -5px 10px; */
+  /* box-shadow: -5px -10px red; */
+  /* box-shadow: -5px -10px 5px red; */
+  /* box-shadow: -5px -10px 5px 5px red; */
+
+  /* shadow in every direction */
+  box-shadow: 0px 0px 10px 20px yellow;
+  /* box-shadow: inset 0px 0px 10px 20px yellow; */
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+
+  /* Transition */
+}
+
+.box:hover {
+  background-color: rgb(255, 0, 0);
+  height: 450px;
+  width: 450px;
+}
