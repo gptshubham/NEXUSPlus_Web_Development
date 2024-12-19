@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olympics 2028 Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body id="first">
+    <header id="head">
+      <div>
+        <h1 id="logo">days.t<span id="logo-o">o</span></h1>
+        <div class="drop">
+          <label for="when">When Is</label>
+          <select name="when" id="when"></select>
+        </div>
+        <div class="drop">
+          <label for="holidays">Holidays</label>
+          <select name="holidays" id="holidays"></select>
+        </div>
+        <div class="drop">
+          <label for="events">Events</label>
+          <select name="events" id="events"></select>
+        </div>
+        <div class="drop">
+          <label for="calender">Calender</label>
+          <select name="calender" id="calender"></select>
+        </div>
+        <div class="drop">
+          <label for="help">Help</label>
+          <select name="help" id="help"></select>
+        </div>
+      </div>
+      <div id="search-box">
+        <label for="search">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search Here"
+          /><span id="search-box-line">|</span> Search
+        </label>
+      </div>
+    </header>
+    <main>
+      <div id="olympics">
+        <p id="days-until">How many days until</p>
+        <p id="olympics-para">Summer Olympics 2028</p>
+        <p id="date">
+          <i class="fas fa-calendar-alt"></i> Friday,21 July 2028 00:00
+        </p>
+        <p id="location">
+          <i class="fas fa-map-marker-alt"></i> LOS Angeles, USA
+        </p>
+      </div>
+      <div id="countdown">
+        <div id="no-of-days"></div>
+        <p id="days">days</p>
+        <div id="timing">
+          <div id="hours">
+            <p class="number"></p>
+            <p class="text">hours</p>
+          </div>
+          <div id="minutes">
+            <p class="number"></p>
+            <p class="text">minutes</p>
+            <p id="to-go">to go</p>
+          </div>
+          <div id="seconds">
+            <p class="number"></p>
+            <p class="text">seconds</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>All times are shown in Asia/Calcutta timezone</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
