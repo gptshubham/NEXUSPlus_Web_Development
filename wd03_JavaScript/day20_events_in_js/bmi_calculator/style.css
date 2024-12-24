@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: helvetica, sans-serif;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 60px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+main {
+  z-index: 1;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+#instruction-to-use {
+  margin: 10px 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.logo {
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#links {
+  height: inherit;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-right: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
+  font-size: 18px;
+}
+
+.right,
+#radio {
+  padding: 10px;
+}
+
+.left {
+  display: inline-block;
+  padding: 10px;
+}
+
+.right {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#age-label {
+  padding-right: 33px;
+}
+#height-label {
+  padding-right: 14px;
+}
+
+#radio {
+  margin-bottom: 10px;
+}
+
+#calculate {
+  margin-left: 82px;
+  background-color: #518428;
+  font-weight: bold;
+}
+
+#clear {
+  background-color: #bbbbbb;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border-color: #333;
+  color: white;
+}
+
+#result {
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #518428;
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+}
+
+@media (max-width: 720px) {
+  body {
+    align-items: start;
+  }
+
+  main {
+    transform: scale(0.75);
+  }
+
+  header {
+    height: 40px;
+  }
+
+  #links {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  header * {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 540px) {
+  main {
+    margin-top: -50px;
+    transform: scale(0.55);
+  }
+}

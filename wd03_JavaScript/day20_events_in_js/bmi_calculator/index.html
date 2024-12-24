@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="links">
+        <a
+          href="https://www.linkedin.com/in/iamshubhamkumargupta/"
+          target="_blank"
+        >
+          <img
+            src="./assets/images/linkedin-logo.png"
+            alt="LinkedIn logo"
+            class="logo"
+          />
+        </a>
+        <a href="https://x.com/shubhamkmrgupta" target="_blank">
+          <img src="./assets/images/x-logo.png" alt="X logo" class="logo" />
+        </a>
+        <a href="https://github.com/gptshubham" target="_blank">
+          <img
+            src="./assets/images/github-logo.png"
+            alt="GitHub logo"
+            class="logo"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <h1>BMI Calculator</h1>
+      <div class="container">
+        <div>
+          <p id="instruction-to-use">
+            <img src="./insm.svg" alt="" class="svg" />
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <span class="left" id="age-label">Age</span>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="2"
+          max="120"
+          value="2"
+          class="right"
+        />
+        <span>ages: 2 - 120</span>
+        <br />
+        <div id="radio">
+          <span>Gender</span>
+          <label>
+            <input type="radio" name="gender" value="male" id="male" checked />
+            Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" id="female" />
+            Female
+          </label>
+
+          <br />
+        </div>
+        <span class="left" id="height-label">Height</span>
+        <input
+          type="number"
+          id="height"
+          name="height"
+          value="180"
+          class="right"
+        />
+        <span>cm</span>
+        <br />
+
+        <span class="left">Weight</span>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          value="65"
+          class="right"
+        />
+        <span>kg</span>
+        <br />
+        <button class="btn" id="calculate">Calculate</button>
+        <button class="btn" id="clear">Clear</button>
+      </div>
+      <div id="result">Result</div>
+    </main>
+  </body>
+</html>
