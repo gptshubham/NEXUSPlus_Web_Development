@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: #1a1a3a;
+  --secondary-color: #4a1a4a;
+  --accent-color: #ff6b6b;
+  --text-color: #ffffff;
+}
+/* Note: 
+:root is a pseudo class, Represents the highest-level element in the document (similar to the <html> element) 
+Using :root for CSS variables makes them globally accessible throughout the entire stylesheet.*/
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.birth-date-group {
+  margin-bottom: 20px;
+}
+
+.date-label {
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.date-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+label {
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, var(--accent-color), #ff9f9f);
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
+}
+
+#result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loading-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  color: var(--text-color);
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  #result {
+    font-size: 0.9em;
+  }
+}
+
+.upper-container {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+}
+
+.orbit {
+  height: 75px;
+  width: 75px;
+  position: relative;
+}
+
+/* Sun */
+.Sum {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.Sum > img {
+  height: 5rem;
+}
+
+/* Mercury */
+.Mercury {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: mercury;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Mercury > img {
+  height: 2.3rem;
+}
+
+.mercury_orbit {
+  height: 12.7rem;
+  width: 12.7rem;
+  /* border: 1px dashed white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+}
+
+@keyframes mercury {
+  from {
+    transform: rotate(0deg) translate(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(100px) rotate(-360deg);
+  }
+}
+
+/* Venus */
+.Venus {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: venus;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Venus > img {
+  height: 4rem;
+}
+.venus_orbit {
+  height: 19rem;
+  width: 19rem;
+  /* border: 1px dashed white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -95px;
+  right: -95px;
+}
+
+@keyframes venus {
+  from {
+    transform: rotate(0deg) translate(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(150px) rotate(-360deg);
+  }
+}
+
+/* Earth */
+.Earth {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: earth;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Earth > img {
+  height: 4rem;
+}
+.earth_orbit {
+  height: 25.5rem;
+  width: 25.5rem;
+  /* border: 1px dashed white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -150px;
+  right: -150px;
+}
+
+@keyframes earth {
+  from {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(200px) rotate(-360deg);
+  }
+}
+
+/* Mars */
+.Mars {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: mars;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Mars > img {
+  height: 2rem;
+}
+.mars_orbit {
+  height: 32.6rem;
+  width: 32.6rem;
+  /* border: 1px dashed white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -209px;
+  right: -209px;
+}
+
+@keyframes mars {
+  from {
+    transform: rotate(0deg) translate(260px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(260px) rotate(-360deg);
+  }
+}
+
+/* Jupyter */
+.Jupiter {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: jupyter;
+  animation-duration: 31s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Jupiter > img {
+  height: 3.5rem;
+}
+.jupyter_orbit {
+  height: 40.2rem;
+  width: 40.2rem;
+  /* border: 1px dashed white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -270px;
+  right: -270px;
+}
+
+@keyframes jupyter {
+  from {
+    transform: rotate(0deg) translate(320px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(320px) rotate(-360deg);
+  }
+}
+
+.Saturn {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: saturn;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Saturn > img {
+  height: 2.5rem;
+}
+.saturn_orbit {
+  height: 50rem;
+  width: 50rem;
+  /* border: 1px dashed white; */
+  border-radius: 50%;
+  position: absolute;
+  bottom: -345px;
+  right: -345px;
+}
+
+@keyframes saturn {
+  from {
+    transform: rotate(0deg) translate(400px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(400px) rotate(-360deg);
+  }
+}
+
+.planet-container * {
+  scale: 0.9;
+}
+
+.planet-container {
+  position: fixed;
+  left: 22%;
+  top: 45%;
+}
