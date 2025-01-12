@@ -11,3 +11,5 @@ function updateBalance(balance) {
 updateBalance(balance);
 
 console.log(balance);
+
+console.log('Captain America');
