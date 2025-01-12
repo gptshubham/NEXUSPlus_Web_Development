@@ -54,7 +54,7 @@ showPaymentDetails();
 
 function showUpdatedBalance(amount) {
   const balanceElement = document.querySelector('#balance-container');
-  balanceElement.innerHTML = amount;
+  balanceElement.innerHTML = `Balance: ${balance}`;
 }
 
 showUpdatedBalance(balance);
