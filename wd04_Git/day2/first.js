@@ -39,3 +39,15 @@ function showUserData() {
 }
 
 showUserData();
+
+function showDetailsInOneLine(name, age, balance) {
+  const oneLiner = document.createElement('div');
+  oneLiner.style.marginTop = '40px';
+  oneLiner.style.fontSize = '20px';
+
+  oneLiner.innerHTML = `Hello, I'm ${name}, I'm ${age} years old and I have Rs.${balance} in my bank!`;
+
+  root.append(oneLiner);
+}
+
+showDetailsInOneLine(username, age, balance);
