@@ -13,3 +13,5 @@ updateBalance(balance);
 console.log(balance);
 
 console.log('Captain America');
+
+console.log('Captain Cool MSD');
