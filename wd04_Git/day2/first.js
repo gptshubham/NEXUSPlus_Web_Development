@@ -13,3 +13,5 @@ updateBalance(balance);
 console.log(balance);
 
 console.log('Captain Jack Sparrow');
+
+console.log('Bug final commit');
