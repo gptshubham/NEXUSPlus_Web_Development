@@ -41,9 +41,9 @@ function showPaymentDetails() {
   paymentDetails.style.marginTop = '2rem';
 
   const paymentTo = document.createElement('div');
-  const payment1 = `Amount Payable to Mr. ${creditors.creditor1[0]}: ${creditors.creditor1[1]}`;
+  const payment1 = `Amount Paid to Mr. ${creditors.creditor1[0]}: ${creditors.creditor1[1]}`;
   balance -= creditors.creditor1[1];
-  const payment2 = `Amount Payable to Mr. ${creditors.creditor2[0]}: ${creditors.creditor2[1]}`;
+  const payment2 = `Amount Paid to Mr. ${creditors.creditor2[0]}: ${creditors.creditor2[1]}`;
   balance -= creditors.creditor2[1];
   paymentTo.innerHTML = `${payment1}<br>${payment2}`;
   paymentDetails.append(paymentTo);
