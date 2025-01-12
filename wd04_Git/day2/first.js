@@ -9,3 +9,5 @@ function updateBalance(balance) {
 }
 
 updateBalance(balance);
+
+console.log(balance);
