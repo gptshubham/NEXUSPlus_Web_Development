@@ -1,5 +1,5 @@
 const username = 'Shubham';
-const age = 20;
+const age = 90;
 const balance = 300;
 
 console.log('Hello, world!');
@@ -9,16 +9,6 @@ function updateBalance(balance) {
 }
 
 updateBalance(balance);
-
-console.log(balance);
-
-console.log('Captain Jack Sparrow');
-
-console.log('Bug final commit');
-
-console.log('Captain America');
-
-console.log('Captain Cool MSD');
 
 const root = document.querySelector('.root');
 function showUserData() {
