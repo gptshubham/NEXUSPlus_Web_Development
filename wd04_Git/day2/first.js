@@ -1,24 +1,18 @@
 const username = 'Shubham';
-const age = 20;
-const balance = 300;
+const age = 90;
+let balance = 300;
+const creditors = {
+  creditor1: ['Rohan', 50],
+  creditor2: ['Mohan', 90],
+};
 
 console.log('Hello, world!');
 
-function updateBalance(balance) {
-  balance += 20;
+function updateBalance(amount) {
+  amount += 20;
 }
 
 updateBalance(balance);
-
-console.log(balance);
-
-console.log('Captain Jack Sparrow');
-
-console.log('Bug final commit');
-
-console.log('Captain America');
-
-console.log('Captain Cool MSD');
 
 const root = document.querySelector('.root');
 function showUserData() {
@@ -31,6 +25,7 @@ function showUserData() {
   userAge.innerHTML = `Age: ${age}`;
 
   const balanceAmount = document.createElement('div');
+  balanceAmount.id = 'balance-container';
 
   balanceAmount.innerHTML = `Balance: ${balance}`;
 
@@ -39,6 +34,30 @@ function showUserData() {
 }
 
 showUserData();
+
+function showPaymentDetails() {
+  const paymentDetails = document.createElement('div');
+  paymentDetails.style.fontSize = '2rem';
+  paymentDetails.style.marginTop = '2rem';
+
+  const paymentTo = document.createElement('div');
+  const payment1 = `Amount Paid to Mr. ${creditors.creditor1[0]}: ${creditors.creditor1[1]}`;
+  balance -= creditors.creditor1[1];
+  const payment2 = `Amount Paid to Mr. ${creditors.creditor2[0]}: ${creditors.creditor2[1]}`;
+  balance -= creditors.creditor2[1];
+  paymentTo.innerHTML = `${payment1}<br>${payment2}`;
+  paymentDetails.append(paymentTo);
+  root.append(paymentDetails);
+}
+
+showPaymentDetails();
+
+function showUpdatedBalance(amount) {
+  const balanceElement = document.querySelector('#balance-container');
+  balanceElement.innerHTML = amount;
+}
+
+showUpdatedBalance(balance);
 
 function showDetailsInOneLine(name, age, balance) {
   const oneLiner = document.createElement('div');
