@@ -15,3 +15,5 @@ navigation.addEventListener('click', (e) => {
 });
 
 console.log('Latest Update');
+
+console.log('But Fixed');
