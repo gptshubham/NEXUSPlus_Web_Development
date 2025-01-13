@@ -6,12 +6,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-<<<<<<< HEAD
   height: 100vh;
   width: auto;
-=======
   background-color: #f5f5f5;
->>>>>>> 04a4e0d (updated navigation buttons styles and functionality)
 }
 
 header {
