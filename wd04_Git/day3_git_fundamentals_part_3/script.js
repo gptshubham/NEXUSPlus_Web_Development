@@ -11,3 +11,9 @@ secondButton.addEventListener('click', () =>
 thirdButton.addEventListener('click', () =>
   alert('You have clicked the third navigation button')
 );
+
+const geeksWorld = document.querySelector('.geeks-world');
+geeksWorld.addEventListener('click', () => {
+  document.querySelector('header').classList.remove('hidden');
+  geeksWorld.classList.add('hidden');
+});

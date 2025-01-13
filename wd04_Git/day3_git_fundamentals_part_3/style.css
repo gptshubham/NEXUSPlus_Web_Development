@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: auto;
 }
 
 header {
@@ -32,4 +34,26 @@ h1 {
 
 h1 span {
   color: goldenrod;
+}
+
+.geeks-world {
+  background-color: salmon;
+  color: #fafafa;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
