@@ -6,8 +6,12 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<<<<<<< HEAD
   height: 100vh;
   width: auto;
+=======
+  background-color: #f5f5f5;
+>>>>>>> 04a4e0d (updated navigation buttons styles and functionality)
 }
 
 header {
@@ -19,17 +23,19 @@ header {
 }
 
 .nav-btn {
+  font-size: 16px;
+  font-weight: bolder;
   padding: 5px 10px;
   margin-left: 10px;
   background-color: goldenrod;
-  color: white;
+  color: #f8f8f8;
   border-radius: 4px;
   border: none;
   cursor: pointer;
 }
 
 h1 {
-  color: white;
+  color: #f8f8f8;
 }
 
 h1 span {
