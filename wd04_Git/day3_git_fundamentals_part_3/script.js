@@ -13,3 +13,5 @@ navigation.addEventListener('click', (e) => {
     alert('You have clicked sign-up button');
   }
 });
+
+console.log('Latest Update');
