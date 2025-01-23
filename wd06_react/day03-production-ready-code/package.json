@@ -1,0 +1,27 @@
+{
+  "name": "day03-production-ready-code",
+  "version": "1.0.0",
+  "description": "\"react basics - production ready code\"",
+  "homepage": "https://github.com/gptshubham/NEXUSPlus_Web_Development/tree/master#readme",
+  "bugs": {
+    "url": "https://github.com/gptshubham/NEXUSPlus_Web_Development/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gptshubham/NEXUSPlus_Web_Development.git#master"
+  },
+  "license": "ISC",
+  "author": "gptshubham",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
