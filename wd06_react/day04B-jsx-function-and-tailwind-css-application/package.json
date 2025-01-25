@@ -1,0 +1,28 @@
+{
+  "name": "myntra_react",
+  "version": "1.0.0",
+  "description": "\"myntra react frontend clone\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gptshubham/myntra_react_clone.git"
+  },
+  "author": "gptshubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gptshubham/myntra_react_clone/issues"
+  },
+  "homepage": "https://github.com/gptshubham/myntra_react_clone#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  }
+}
