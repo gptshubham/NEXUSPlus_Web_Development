@@ -1,0 +1,29 @@
+{
+  "name": "myntra_react_tailwind",
+  "version": "1.0.0",
+  "description": "\"Myntra frontend clone built with React.js and Tailwind CSS\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gptshubham/myntra_frontend_clone_react_tailwind.git"
+  },
+  "author": "gptshubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gptshubham/myntra_frontend_clone_react_tailwind/issues"
+  },
+  "homepage": "https://github.com/gptshubham/myntra_frontend_clone_react_tailwind#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
